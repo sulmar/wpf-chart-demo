@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using WpfChartDemo.IServices;
-using WpfChartDemo.Models;
 using WpfChartDemo.Services;
 
 namespace WpfChartDemo.ViewModels
@@ -14,7 +9,7 @@ namespace WpfChartDemo.ViewModels
         private readonly ISummaryService summaryService;
 
 
-        public IList<Summary> Summaries { get; set; }
+        public IList<KeyValuePair<string, int>> Summaries { get; set; }
 
         public ChartViewModel()
             : this(new FakeSummaryService())

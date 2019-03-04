@@ -22,8 +22,8 @@
                 <dv:Chart.Series>
                     <dv:ColumnSeries Title="Experience"
                                   ItemsSource="{Binding Summaries}"
-                                  DependentValuePath="Count" 
-                                  IndependentValuePath="Name">
+                                  DependentValuePath="Value" 
+                                  IndependentValuePath="Key">
                     </dv:ColumnSeries>
                 </dv:Chart.Series>
             </dv:Chart>
@@ -32,8 +32,8 @@
                 <dv:Chart.Series>
                     <dv:PieSeries Title="Experience"
                                   ItemsSource="{Binding Summaries}"
-                                  DependentValuePath="Count" 
-                                  IndependentValuePath="Name">
+                                  DependentValuePath="Value" 
+                                  IndependentValuePath="Key">
                     </dv:PieSeries>
                 </dv:Chart.Series>
             </dv:Chart>

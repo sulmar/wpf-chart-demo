@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using WpfChartDemo.Models;
+﻿using System.Collections.Generic;
 
 namespace WpfChartDemo.IServices
 {
     public interface ISummaryService
     {
-        IList<Summary> Get();
+        IList<KeyValuePair<string, int>> Get();
     }
 }
