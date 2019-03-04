@@ -67,8 +67,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Services\FakeSummaryService.cs" />
+    <Content Include="Data\baza.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Compile Include="IServices\IUserService.cs" />
+    <Compile Include="Models\Base.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Services\FileUserService.cs" />
     <Compile Include="ViewModels\ChartViewModel.cs" />
+    <Compile Include="ViewModels\ViewModelBase.cs" />
     <Compile Include="Views\ChartView.xaml.cs">
       <DependentUpon>ChartView.xaml</DependentUpon>
     </Compile>
@@ -76,7 +83,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="IServices\ISummaryService.cs" />
     <Compile Include="Views\ShellView.xaml.cs">
       <DependentUpon>ShellView.xaml</DependentUpon>
     </Compile>
@@ -116,8 +122,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

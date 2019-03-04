@@ -1,0 +1,10 @@
+﻿10000722|Nazwisko1|Rafał|aaaaaaaaaaa|City|Ola|Borek
+10000724|Nazwisko2|Dorota|bbbbbbbbbbbbb|City|Ola|Borek
+10000737|Nazwisko3|Wojciech|cccccccccccc|City|Tomasz|Kapusta
+10000738|Nazwisko4|Tomasz|aaaaaaaaaaa|City|Tomasz|Kapusta
+10000832|Nazwisko5|Aleksandra|bbbbbbbbbbbbb|City|Tomasz|Kapusta
+10000833|Nazwisko6|Tomasz|aaaaaaaaaaaaaaa|City|Ola|Borek
+10000834|Nazwisko7|Magdalena|bbbbbbbbbbbbb|City|Ola|Borek
+10000835|Nazwisko8|Sebastian|cccccccccccc|City|Tomasz|Kapusta
+10000890|Nazwisko9|Izabela|dddddddddddddddd|City|Tomasz|Kapusta
+10000894|Nazwisko10|Michał|dddddddddddddddd|City|Ola|Borek
