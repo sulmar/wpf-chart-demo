@@ -10,6 +10,6 @@ namespace WpfChartDemo.IServices
     public interface IUserService
     {
         IList<User> Get();
-        void AddRange(IList<User> users);
+        void AddRange(IEnumerable<User> users);
     }
 }

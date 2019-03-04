@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Windows.Input;
+using WpfChartDemo.Commands;
 using WpfChartDemo.IServices;
 using WpfChartDemo.Models;
 using WpfChartDemo.Services;
@@ -15,6 +17,8 @@ namespace WpfChartDemo.ViewModels
 
         public IEnumerable<User> Users { get; set; }
 
+        public ICommand SaveCommand { get; private set; }
+
         public ChartViewModel()
             : this(new FileUserService("data/baza.txt"))
         {
@@ -25,8 +29,16 @@ namespace WpfChartDemo.ViewModels
         {
             this.userService = userService;
 
+            SaveCommand = new RelayCommand(Save);
+
             Load();
         }
+
+        private void Save()
+        {
+            userService.AddRange(Users);
+        }
+
 
         private void Load()
         {

@@ -44,15 +44,15 @@ namespace WpfChartDemo.Services
         }
 
 
-        public void AddRange(IList<User> users)
+        public void AddRange(IEnumerable<User> users)
         {
-            StreamWriter sw = new StreamWriter(path, append: true);
-
-            foreach (var item in users)
+            using (StreamWriter sw = new StreamWriter(path, append: true))
             {
-                sw.WriteLine(item.NrOsob + "|" + item.Nazwisko + "|" + item.Imie + "|" + item.Stanowisko + "|" + item.MiejsceWykonywaniaPracy + "|" + item.ImiePrzełożonego + "|" + item.NazwiskoPrzełożonego);
+                foreach (var item in users)
+                {
+                    sw.WriteLine(item.NrOsob + "|" + item.Nazwisko + "|" + item.Imie + "|" + item.Stanowisko + "|" + item.MiejsceWykonywaniaPracy + "|" + item.ImiePrzełożonego + "|" + item.NazwiskoPrzełożonego);
+                }
             }
-            sw.Close();
         }
 
         

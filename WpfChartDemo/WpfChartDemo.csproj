@@ -70,6 +70,7 @@
     <Content Include="Data\baza.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Compile Include="Commands\RelayCommand.cs" />
     <Compile Include="IServices\IUserService.cs" />
     <Compile Include="Models\Base.cs" />
     <Compile Include="Models\User.cs" />
